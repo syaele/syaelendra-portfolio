@@ -23,11 +23,15 @@
       }
 
       header {
-        background-color: #00183f;
+        background-color: #8f1919;
+        display: flex;
+        justify-content: end;
+        height: 55px;
       }
 
       .navigasi {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -35,22 +39,9 @@
         height: 85px;
       }
 
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .logo img {
-        width: 70px;
-        height: 50px;
-        object-fit: contain;
-      }
-
       .navigasi h3 {
         color: white;
         font-size: 1.1rem;
-        white-space: nowrap;
       }
 
       nav {
@@ -83,7 +74,6 @@
         height: 30px;
       }
 
-
       /* hero */
       .hero-section {
         margin: 0;
@@ -105,7 +95,7 @@
       }
 
       .hero-section p {
-        color: #8f1919;
+        color: whitesmoke;
         font-size: 20px;
         padding-bottom: 10px;
       }
@@ -127,6 +117,7 @@
       }
 
       .about-me p {
+        max-width: 500px;
         font-weight: 150;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -255,9 +246,9 @@
         header button {
           display: none;
         }
-      }  
+      }
 
-      /* RESPONSIVE MOBILE */
+      /* responsive mobile */
       @media (max-width: 768px) {
         /* navbar */
         nav ul {
@@ -355,14 +346,13 @@
     </style>
   </head>
   <body>
-     <header>
+    <header>
       <div class="navigasi">
-
         <nav>
           <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">portfolio</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
           <button>
             <img src="bars-solid-full.svg" alt="Menu" />
@@ -382,15 +372,14 @@
       <div class="text">
         <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit, amet <br />
-          consectetur adipisicing elit. <br />
-          Voluptatibus ratione, laudantium mollitia <br />
-          beatae tempore quos <br />
-          quibusdam? Sequi alias doloremque quos <br />
-          voluptate pariatur laborum <br />
-          distinctio repellat necessitatibus ab adipisci id, <br />
-          asperiores nisi <br />
-          nihil rerum ipsam? Eum
+          Hello! I am a student at Abudzar with <br> a strong interest in technology,
+          particularly web development and UI/UX <br> design. I enjoy <br> creating
+          websites that not only function well but also feature a <br> modern, clean,
+          and responsive design that offers a great user experience.  I am
+          constantly honing my coding and UI/UX design skills by working on
+          various projects and exploring new technologies. To me,building a
+          website is about more than just code; it is about creating an <br> engaging
+          experience for the user.
         </p>
       </div>
 
@@ -406,17 +395,17 @@
       <div class="projects-container">
         <div class="projects-card">
           <h2>UI</h2>
-          <img src="Screenshot 2026-08-27 125507.png" alt="" />
+          <img src="ui.jpg" alt="" />
         </div>
 
         <div class="projects-card">
           <h2>UX</h2>
-          <img src="Screenshot 2026-08-27 125015.png" alt="UX Project" />
+          <img src="ux.jpg" alt="UX Project" />
         </div>
 
         <div class="projects-card">
           <h2>portfolio</h2>
-          <img src="Screenshot 2026-08-27 125121.png" alt="Portfolio Project" />
+          <img src="pr.jpg" alt="Portfolio Project" />
         </div>
       </div>
     </section>
